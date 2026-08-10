@@ -1,11 +1,11 @@
 def calculate_change(paid, price):
     change = paid - price 
     return change
-snack = ("Chips")
-price = int(input("What is the Price of Chips: "))
+snack = ("Parking")
+price = int(input("What is the Price of Parking: "))
 print("The Machine can only take coins of Value 1, 5, 10 and 25")
 while True:
-    paid = int(input("How much are you Paying for the Snacks: "))
+    paid = int(input("How much are you Paying for the Parking: "))
     if paid not in (1, 5, 10, 25):
         print("You gave the Machine a Non Acceptable Coin")
         continue
@@ -15,5 +15,5 @@ while True:
             print("Nothing needs to be returned as Change")
             break
         else:
-            print("Collect your Snack & Cash, The return amount is:", result)
+            print("Collect your Parking Token The return amount is:", result)
             break
